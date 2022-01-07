@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links e PseudoElementos</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: #ff0000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: #006400;
+        }
+        a:hover{
+            color: #ff8c00;
+            text-decoration: underline;
+        }
+        a:active{
+            color: #778899;
+        }
+        .diferente::before{
+            content: '⇒';
+        }
+        .diferente::after{
+            content: '⇐';
+        }
+        .diferente{
+            background-color: #eb6d6dc5;
+        }
+        /* #  =  id
+           .  =  class
+           :  =  pseudo class
+           :: =  pseudo element
+           >  =  children
+        */
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://onefootball.com/pt-br/inicio" target="_blank" class="diferente">Site do OneFootball</a></li>
+        <li><a href="https://ge.globo.com/cartola-fc/" target="_blank" class="diferente">Site do Cartola</a></li>
+        <li><a href="https://ge.globo.com/" target="_blank" class="diferente">Site do GE</a></li>
+    </ul>
+</body>
+</html>
